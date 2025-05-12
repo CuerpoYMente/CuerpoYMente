@@ -122,15 +122,19 @@ const Container = styled.div`
 
 const Main = styled.main`
   flex: 1;
-  width: 50%;              // ocupa todo el ancho disponible
-  max-width: 1400px;        // o el valor que prefieras (más que 1000px)
-  min-width: 1200px;        // opcional, para evitar que se haga pequeño
+  width: 100%;
+  max-width: 1200px;
   margin: 6rem auto 2rem;
-  padding: 0 2rem;
+  padding: 1rem;
   background-color: ${colors.purplePale};
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+  @media (max-width: 768px) {
+    padding: 1rem 0.5rem;
+  }
 `
+
 
 
 const Title = styled.h2`
@@ -142,19 +146,26 @@ const Title = styled.h2`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
   margin-bottom: 2rem;
 `
 
+
+
 const ActionButton = styled.button`
-  padding: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.95rem;
   background-color: ${colors.purpleLight};
   color: white;
   border: none;
   border-radius: 6px;
-  font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s;
-  &:hover { background-color: ${colors.purpleMedium}; }
+
+  &:hover {
+    background-color: ${colors.purpleMedium};
+  }
 `
+

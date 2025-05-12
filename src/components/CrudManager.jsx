@@ -81,15 +81,17 @@ export default function CrudManager({
 
   return (
     <Wrapper>
-      <Search
-        type="text"
-        placeholder={`Buscar ${label.toLowerCase()}...`}
-        value={filter}
-        onChange={e=>setFilter(e.target.value)}
-      />
+      
 
       {showList && (
+        
         <List>
+          <Search
+            type="text"
+            placeholder={`Buscar ${label.toLowerCase()}...`}
+            value={filter}
+            onChange={e=>setFilter(e.target.value)}
+          />
             {filtered.map((item, idx) => (
             <ListItem key={`${getItemId(item)}-${idx}`}>
                 <ItemLabel>{renderItem(item)}</ItemLabel>
