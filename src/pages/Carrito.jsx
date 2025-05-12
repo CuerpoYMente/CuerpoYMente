@@ -230,13 +230,23 @@ const ContentWrapper = styled.div`
   margin: 6rem auto;
   flex: 1;
   padding: 0 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `
+
 
 const Sidebar = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
+
 
 const Block = styled.div`
   background: ${colors.white};
@@ -246,7 +256,7 @@ const Block = styled.div`
 `
 
 const Title = styled.h3`
-  margin: 0 0 .5rem;
+  margin: 1rem 1rem;
   color: ${colors.purpleDark};
 `
 
@@ -296,6 +306,9 @@ const CartSection = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 600px;
+  margin-bottom: 2rem;
+  background: ${colors.white};
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 `
 
 const CartScroll = styled.div`
@@ -362,7 +375,11 @@ const Del = styled.button`
   cursor: pointer;
 `
 
-const OrdersSection = styled.div``
+const OrdersSection = styled.div`
+  margin-bottom: 2rem;
+  background: ${colors.white};
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+`
 
 const OrdersScroll = styled.div`
   max-height: 400px;
