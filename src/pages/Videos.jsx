@@ -3,7 +3,6 @@ import styled from "styled-components"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import colors from "../theme/colors"
-import { BACKEND } from '../constants/constantes'
 import {
   API_BASE,
   VIDEOS_ENDPOINT,
