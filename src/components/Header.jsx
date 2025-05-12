@@ -46,7 +46,7 @@ export default function Header() {
     navigate('/carrito')
   }
 
-
+  const [showMobileMenu, setShowMobileMenu] = useState(false)
   const toggleMenu = (menu) => setOpenMenu(openMenu === menu ? null : menu)
   const handleAccount = () => isLogged ? navigate('/carrito') : navigate('/login')
 
@@ -57,7 +57,11 @@ export default function Header() {
         <SiteName>Cuerpo Y Mente</SiteName>
       </Logo>
 
-      <Nav ref={navRef}>
+      <BurgerButton onClick={() => setShowMobileMenu(!showMobileMenu)}>
+        ☰
+      </BurgerButton>
+      <Nav ref={navRef} open={showMobileMenu}>
+
         <NavItem as={Link} to="/">Inicio</NavItem>
 
         <DropdownWrapper>
@@ -85,7 +89,8 @@ export default function Header() {
         </DropdownWrapper>
 
         
-        <VerticalDivider />
+        <VerticalDivider isMobile={showMobileMenu} />
+
         <AccountBtn onClick={handleAccount}>Mi Cuenta</AccountBtn>
 
         {/* → Aparece solo si isAdmin es true ← */}
@@ -143,6 +148,17 @@ const Nav = styled.nav`
   align-items: center;
   gap: 3rem;
   position: relative;
+
+  @media (max-width: 768px) {
+    display: ${props => (props.open ? 'flex' : 'none')};
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: ${colors.purpleDark};
+    padding: 1rem 0;
+  }
 `
 
 const NavItem = styled.div`
@@ -188,7 +204,16 @@ const VerticalDivider = styled.div`
   width: 1px;
   height: 24px;
   background: ${colors.white}60;
+
+  ${({ isMobile }) => isMobile && `
+    display: none;
+  `}
+
+  @media (max-width: 768px) {
+    align-self: stretch;
+  }
 `
+
 
 const AccountBtn = styled.button`
   background: none;
@@ -207,6 +232,20 @@ const NavItemAdmin = styled(Link)`
   margin-right: 1.5rem;
   &:hover { color: ${colors.grayLight}; }
 `
+
+const BurgerButton = styled.button`
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+`
+
 
 
 
