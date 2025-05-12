@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import colors from '../theme/colors'
-import { API_BASE } from '../constants/constantes'
+import { API_BASE, BACKEND } from '../constants/constantes'
 import { Trash2, ArrowLeft, ArrowRight } from 'lucide-react'
 
 const Carrito = () => {
@@ -27,7 +27,7 @@ const Carrito = () => {
   const carritoIds = Array.isArray(user.carrito) ? user.carrito : []
   Promise.all(
     carritoIds.map(id =>
-      fetch(`${API_BASE}/productos/${id}`)
+      fetch(`${BACKEND}${API_BASE}/productos/${id}`)
         .then(res => {
           if (!res.ok) throw new Error('Producto no encontrado')
           return res.json()
@@ -46,12 +46,12 @@ const Carrito = () => {
       Promise.all(
         pedidoIds.map(async orderId => {
           // traigo el pedido
-          const orderRes = await fetch(`${API_BASE}/pedidos/${orderId}`)
+          const orderRes = await fetch(`${BACKEND}${API_BASE}/pedidos/${orderId}`)
           const order = await orderRes.json()
           // traigo la imágenes de cada producto
           const images = await Promise.all(
             order.items.map(id =>
-              fetch(`${API_BASE}/productos/${id}`)
+              fetch(`${BACKEND}${API_BASE}/productos/${id}`)
                 .then(r => r.json())
                 .then(prod => prod.imagenes?.[0] || '/assets/placeholder.png')
             )
@@ -84,7 +84,7 @@ const Carrito = () => {
   const handleRemove = async id => {
     const user = JSON.parse(localStorage.getItem('user')||'{}')
     const res = await fetch(
-      `${API_BASE}/usuarios/${user.id}/carrito/${id}`,
+      `${BACKEND}${API_BASE}/usuarios/${user.id}/carrito/${id}`,
       { method:'DELETE', headers:{ Authorization:`Bearer ${localStorage.getItem('token')}` } }
     )
     if (!res.ok) {

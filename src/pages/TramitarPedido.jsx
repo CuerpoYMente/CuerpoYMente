@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import colors from '../theme/colors'
-import { API_BASE } from '../constants/constantes'
+import { API_BASE, BACKEND } from '../constants/constantes'
 
 export default function RealizaPedido() {
   const navigate = useNavigate()
@@ -33,7 +33,7 @@ export default function RealizaPedido() {
     }
     Promise.all(
       carritoIds.map(id =>
-        fetch(`${API_BASE}/productos/${id}`).then(r => r.json())
+        fetch(`${BACKEND}${API_BASE}/productos/${id}`).then(r => r.json())
       )
     )
       .then(prods => {
@@ -78,7 +78,7 @@ export default function RealizaPedido() {
 
     try {
       const token = localStorage.getItem('token')
-      const res   = await fetch(`${API_BASE}/pedidos`, {
+      const res   = await fetch(`${BACKEND}${API_BASE}/pedidos`, {
         method: 'POST',
         headers: {
           'Content-Type':  'application/json',

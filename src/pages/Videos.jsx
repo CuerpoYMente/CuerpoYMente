@@ -3,6 +3,7 @@ import styled from "styled-components"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import colors from "../theme/colors"
+import { BACKEND } from '../constants/constantes'
 import {
   API_BASE,
   VIDEOS_ENDPOINT,
@@ -10,7 +11,8 @@ import {
   INTENSIDAD,
   DEPORTE,
   ZONA_TRABAJADA,
-  MATERIALES
+  MATERIALES,
+  BACKEND
 } from '../constants/constantes'
 
 const Videos = () => {
@@ -37,7 +39,7 @@ const Videos = () => {
 
   // Carga los vídeos desde el backend
   useEffect(() => {
-    fetch(`${API_BASE}${VIDEOS_ENDPOINT}`)
+    fetch(`${BACKEND}${API_BASE}${VIDEOS_ENDPOINT}`)
       .then((res) => res.json())
       .then((data) => setVideos(data))
       .catch((error) => console.error("Error al cargar los videos:", error))

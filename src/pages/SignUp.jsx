@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import colors from "../theme/colors"
+import { BACKEND } from '../constants/constantes'
 
 const Registro = () => {
   const [name, setName] = useState("")
@@ -28,7 +29,7 @@ const Registro = () => {
   }
 
   try {
-    const res = await fetch("http://localhost:5000/api/usuarios/signup", {
+    const res = await fetch(`${BACKEND}/api/usuarios/signup`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, password })

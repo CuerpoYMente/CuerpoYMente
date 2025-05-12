@@ -2,6 +2,7 @@
 export const API_BASE = '/api'          // proxy de Vite
 export const VIDEOS_ENDPOINT = '/videos'
 export const RETOS_ENDPOINT  = '/retos'
+export const BACKEND = 'https://cym-backend.onrender.com'
 
 // valores de filtro…
 export const DURACIONES = [

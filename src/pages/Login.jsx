@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import colors from "../theme/colors"
+import { BACKEND } from '../constants/constantes'
 
 const Login = () => {
   const [email, setEmail] = useState("")
@@ -16,7 +17,7 @@ const Login = () => {
     setError(null)
 
     try {
-      const res = await fetch("http://localhost:5000/api/usuarios/login", {
+      const res = await fetch(`${BACKEND}/api/usuarios/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })

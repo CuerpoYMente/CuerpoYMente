@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import colors from '../theme/colors'
-import { API_BASE } from '../constants/constantes'
+import { API_BASE , BACKEND } from '../constants/constantes'
 
 const Reto = () => {
   const { id } = useParams()
@@ -19,7 +19,7 @@ const Reto = () => {
   // Cargar reto y aportes desde backend
   useEffect(() => {
     // Detalle del reto
-    fetch(`${API_BASE}/retos/${id}`)
+    fetch(`${BACKEND}${API_BASE}/retos/${id}`)
       .then(res => {
         if (!res.ok) throw new Error('Reto no encontrado')
         return res.json()
@@ -28,7 +28,7 @@ const Reto = () => {
       .catch(err => setError(err.message))
 
     // Comentarios/aportes
-    fetch(`${API_BASE}/retos/${id}/aportes`)
+    fetch(`${BACKEND}${API_BASE}/retos/${id}/aportes`)
       .then(res => res.json())
       .then(setAportes)
       .catch(err => console.error('Error cargando aportes:', err))
@@ -49,7 +49,7 @@ const Reto = () => {
     const user = JSON.parse(userStr)
     const usuario = user.name || 'Usuario'
 
-    fetch(`${API_BASE}/retos/${id}/aportes`, {
+    fetch(`${BACKEND}${API_BASE}/retos/${id}/aportes`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

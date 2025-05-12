@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import colors from '../theme/colors'
-import { API_BASE } from '../constants/constantes'
+import { API_BASE, BACKEND } from '../constants/constantes'
 
 export default function IngresarDinero() {
   const [amount, setAmount] = useState('')
@@ -29,7 +29,7 @@ export default function IngresarDinero() {
 
     try {
       const res = await fetch(
-        `${API_BASE}/usuarios/${user.id}/saldo`,
+        `${BACKEND}${API_BASE}/usuarios/${user.id}/saldo`,
         {
           method: 'POST',
           headers: {

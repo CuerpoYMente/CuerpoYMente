@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { API_BASE } from '../constants/constantes'
 import colors from '../theme/colors'
+import { BACKEND } from '../constants/constantes'
 
 
 export default function CrudManager({
@@ -24,7 +25,7 @@ export default function CrudManager({
   }, [apiEndpoint])
 
   const fetchItems = async () => {
-    const res = await fetch(`${API_BASE}${apiEndpoint}`)
+    const res = await fetch(`${BACKEND}${API_BASE}${apiEndpoint}`)
     const data = await res.json()
     setItems(data)
   }
@@ -32,7 +33,7 @@ export default function CrudManager({
   const handleDelete = async item => {
     const id = getItemId(item)
     if (!window.confirm(`¿Borrar ${label.toLowerCase()} ${id}?`)) return
-    const res = await fetch(`${API_BASE}${apiEndpoint}/${id}`, {
+    const res = await fetch(`${BACKEND}${API_BASE}${apiEndpoint}/${id}`, {
       method: 'DELETE',
       headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
     })
@@ -52,7 +53,7 @@ export default function CrudManager({
       }
     }
     // POST
-    const res = await fetch(`${API_BASE}${apiEndpoint}`, {
+    const res = await fetch(`${BACKEND}${API_BASE}${apiEndpoint}`, {
       method: 'POST',
       headers: {
         'Content-Type':'application/json',

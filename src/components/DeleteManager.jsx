@@ -14,7 +14,7 @@ export default function DeleteManager({
   const [filter, setFilter] = useState('')
 
   useEffect(() => {
-    fetch(`${API_BASE}${apiEndpoint}`)
+    fetch(`${BACKEND}${API_BASE}${apiEndpoint}`)
       .then(r => r.json())
       .then(setItems)
       .catch(console.error)
@@ -45,7 +45,7 @@ export default function DeleteManager({
     )) return
 
     const res = await fetch(
-      `${API_BASE}${apiEndpoint}/${id}`,
+      `${BACKEND}${API_BASE}${apiEndpoint}/${id}`,
       {
         method: 'DELETE',
         headers: {

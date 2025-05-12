@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import colors from '../theme/colors'
-import { API_BASE } from '../constants/constantes'
+import { API_BASE, BACKEND } from '../constants/constantes'
 
 export default function PagoInmediato() {
   const location = useLocation()
@@ -24,7 +24,7 @@ export default function PagoInmediato() {
     const user = JSON.parse(localStorage.getItem('user') || '{}')
 
     try {
-      const res = await fetch(`${API_BASE}/usuarios/${user.id}/saldo`, {
+      const res = await fetch(`${BACKEND}${API_BASE}/usuarios/${user.id}/saldo`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

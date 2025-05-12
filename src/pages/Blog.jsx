@@ -4,13 +4,14 @@ import Footer from "../components/Footer"
 import colors from "../theme/colors"
 import { Link } from "react-router-dom"
 import { useState, useEffect } from "react"
+import { BACKEND } from '../constants/constantes'
 
 const BlogSemanal = () => {
   const [retos, setRetos] = useState([])
   const [busqueda, setBusqueda] = useState("")
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/retos")
+    fetch(`${BACKEND}/api/retos`)
       .then(res => {
         if (!res.ok) throw new Error("Error al cargar los retos")
         return res.json()

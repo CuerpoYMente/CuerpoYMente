@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import { Link } from 'react-router-dom' 
 import Footer from '../components/Footer'
 import colors from '../theme/colors'
-import { API_BASE } from '../constants/constantes'
+import { API_BASE, BACKEND } from '../constants/constantes'
 import { TIPO_PRODUCTO ,PRICE_RANGES} from '../constants/constantes'
 
 const Tienda = () => {
@@ -18,7 +18,7 @@ const Tienda = () => {
 
   // Carga productos desde backend
   useEffect(() => {
-    fetch(`${API_BASE}/productos`)
+    fetch(`${BACKEND}${API_BASE}/productos`)
       .then(res => res.json())
       .then(data => setProductos(data))
       .catch(err => console.error('Error cargando productos:', err))
@@ -52,7 +52,7 @@ const Tienda = () => {
     const user = JSON.parse(userStr)
     try {
       const res = await fetch(
-        `${API_BASE}/usuarios/${user.id}/carrito`,
+        `${BACKEND}${API_BASE}/usuarios/${user.id}/carrito`,
         {
           method: 'POST',
           headers: {

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import colors from '../theme/colors'
-import { API_BASE } from '../constants/constantes'
+import { API_BASE, BACKEND } from '../constants/constantes'
 
 const Producto = () => {
   const { id } = useParams()
@@ -15,12 +15,12 @@ const Producto = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch(`${API_BASE}/productos/${id}`)
+    fetch(`${BACKEND}${API_BASE}/productos/${id}`)
       .then(res => res.json())
       .then(data => setProducto(data))
       .catch(err => console.error('Error cargando producto:', err))
 
-    fetch(`${API_BASE}/productos/${id}/comentarios`)
+    fetch(`${BACKEND}${API_BASE}/productos/${id}/comentarios`)
       .then(res => res.json())
       .then(setComentarios)
       .catch(err => console.error('Error cargando comentarios:', err))
@@ -39,7 +39,7 @@ const Producto = () => {
     const user = JSON.parse(userStr)
     const usuario = user.name
 
-    fetch(`${API_BASE}/productos/${id}/comentarios`, {
+    fetch(`${BACKEND}${API_BASE}/productos/${id}/comentarios`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
