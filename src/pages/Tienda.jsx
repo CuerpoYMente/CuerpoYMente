@@ -165,7 +165,7 @@ const Container = styled.div`
 const Main = styled.main`
   flex: 1;
   background-color: ${colors.purplePale};
-  padding: 4rem 2rem;
+  padding: 6rem 4rem 2rem;
   max-width: 1400px;
   margin: 0 auto;
 `

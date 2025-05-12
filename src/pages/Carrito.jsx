@@ -250,7 +250,7 @@ const Sidebar = styled.div`
 
 const Block = styled.div`
   background: ${colors.white};
-  padding: 1rem;
+  padding: 0rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 `
@@ -264,12 +264,13 @@ const Balance = styled.div`
   font-size: 1.5rem;
   font-weight: 600;
   color: ${colors.purpleMedium};
-  margin-bottom: .5rem;
+  margin: 1rem 1rem;
 `
 
 const Button = styled.button`
   padding: .5rem 1rem;
   background: ${colors.purpleLight};
+  margin: 1rem 1rem;
   color: white;
   border: none;
   border-radius: 6px;
@@ -281,7 +282,7 @@ const Button = styled.button`
 const SummaryLine = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: .5rem;
+  margin: 1rem 1rem;
 `
 
 const AccountActions = styled.div`
