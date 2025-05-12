@@ -1,9 +1,8 @@
 // src/components/CrudManager.jsx
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import { API_BASE } from '../constants/constantes'
+import { API_BASE, BACKEND } from '../constants/constantes'
 import colors from '../theme/colors'
-import { BACKEND } from '../constants/constantes'
 
 
 export default function CrudManager({
