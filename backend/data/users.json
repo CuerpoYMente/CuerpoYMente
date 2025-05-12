@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "name": "a",
+    "email": "a@a.a",
+    "password": "$2b$10$kX77dx5W1wE5/n4L2ERG9u8gAAKNZahOtxw/iEnu1UiIkxFe6UwvG",
+    "plan_actual": "",
+    "saldo": 56.069999999999986,
+    "carrito": [
+      3,
+      2,
+      1,
+      7,
+      11,
+      14
+    ],
+    "pedidos": [
+      15
+    ]
+  },
+  {
+    "id": 2,
+    "name": "b",
+    "email": "b@b.b",
+    "password": "$2b$10$SUuNlqv0nsTOHIjBaD7eIO1mUSyOO3Shf2J32iwNxqTou5qcbETWq",
+    "plan_actual": "",
+    "carrito": [
+      3,
+      2,
+      11,
+      13
+    ],
+    "saldo": 41.120000000000005,
+    "pedidos": [
+      12,
+      13
+    ]
+  },
+  {
+    "id": 3,
+    "name": "c",
+    "email": "c@c.c",
+    "password": "$2b$10$1Vor2FVcEKWZIMtDWs492.Y79C/JKicxesanLQab2yKrdQluSYtai",
+    "plan_actual": "",
+    "carrito": [
+      2
+    ],
+    "saldo": 0.04999999999999716,
+    "pedidos": [
+      14
+    ]
+  },
+  {
+    "id": 4,
+    "name": "d",
+    "email": "d@d.d",
+    "password": "$2b$10$Ek3FcN6ucSJeon9Rf/GoBukkrxDpQ07NHgnxEqbKJwnGY6U20QXj.",
+    "plan_actual": "",
+    "carrito": []
+  },
+  {
+    "id": 5,
+    "name": "e",
+    "email": "e@e.e",
+    "password": "$2b$10$gLkLoH2Q7CwuU4AgjiWUkuU0E5Rz.HF.uNlMAoWv3no3Ww8mzX27C",
+    "plan_actual": "",
+    "carrito": [
+      1
+    ]
+  }
+]

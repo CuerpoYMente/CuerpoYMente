@@ -1,0 +1,142 @@
+[
+  {
+    "id": "semana-18",
+    "titulo": "Semana 18 - 3 minutos de plancha al día",
+    "descripcion": "¡Desafío de resistencia! Intenta acumular 3 minutos de plancha cada día.",
+    "detalles": "Puedes dividirlo en varias tandas. Comparte tu progreso, fotos o impresiones.",
+    "intensidad": "Alta",
+    "material": "Esterilla",
+    "imagen": "/assets/Plancha.png",
+    "video": "https://www.youtube.com/embed/tu_enlace_de_video",
+    "aportes": [
+      {
+        "usuario": "Carolina",
+        "mensaje": "¡Reto cumplido! Me siento genial."
+      },
+      {
+        "usuario": "Dani",
+        "mensaje": "Más difícil de lo que parece... 😅"
+      },
+      {
+        "usuario": "a",
+        "mensaje": "Locura Máxima"
+      },
+      {
+        "usuario": "c",
+        "mensaje": "boof"
+      },
+      {
+        "usuario": "c",
+        "mensaje": "aaaa"
+      },
+      {
+        "usuario": "c",
+        "mensaje": "ey"
+      },
+      {
+        "usuario": "b",
+        "mensaje": "Cmamo"
+      }
+    ]
+  },
+  {
+    "id": "semana-19",
+    "titulo": "Semana 19 - 10.000 pasos diarios",
+    "descripcion": "¡Reto activo! Tu objetivo esta semana es caminar al menos 10.000 pasos cada día.",
+    "detalles": "Puedes usar tu reloj o móvil para medir. ¡Sube tus capturas o cuéntanos cómo lo llevas!",
+    "intensidad": "Media",
+    "material": "Zapatos XD",
+    "imagen": "/assets/ImagenMosquiPerro.jpg",
+    "video": "https://www.youtube.com/embed/tu_enlace_de_video",
+    "aportes": [
+      {
+        "usuario": "Carolina",
+        "mensaje": "¡Reto cumplido! Me siento genial."
+      },
+      {
+        "usuario": "Dani",
+        "mensaje": "Más difícil de lo que parece... 😅"
+      },
+      {
+        "usuario": "a",
+        "mensaje": "espectacular"
+      }
+    ]
+  },
+  {
+    "id": "semana-20",
+    "titulo": "Semana 20 - 5 minutos de meditación diaria",
+    "descripcion": "¡Entrena tu mente! Dedica al menos 5 minutos diarios a meditar.",
+    "detalles": "Busca un lugar tranquilo, siéntate cómodamente y concéntrate en tu respiración. Comparte tus sensaciones tras una semana de práctica.",
+    "intensidad": "Baja",
+    "material": "Almohada o esterilla",
+    "imagen": "/assets/ImagenMosquiPerro.jpg",
+    "video": "https://www.youtube.com/embed/tu_video_meditacion",
+    "aportes": []
+  },
+  {
+    "id": "semana-21",
+    "titulo": "Semana 21 - 20 sentadillas cada mañana",
+    "descripcion": "¡Actívate desde el primer minuto! Haz 20 sentadillas cada día al despertarte.",
+    "detalles": "No necesitas material. Puedes ir subiendo repeticiones si te ves con energía. Comparte cómo lo integras en tu rutina.",
+    "intensidad": "Media",
+    "material": "Ninguno",
+    "imagen": "/assets/ImagenMosquiPerro.jpg",
+    "video": "https://www.youtube.com/embed/tu_video_sentadillas",
+    "aportes": [
+      {
+        "usuario": "e",
+        "mensaje": "De locos"
+      }
+    ]
+  },
+  {
+    "id": "semana-22",
+    "titulo": "Semana 22 - Reto de hidratación: 2L al día",
+    "descripcion": "¡Cuida tu cuerpo desde dentro! Bebe al menos 2 litros de agua diarios.",
+    "detalles": "Lleva el control con una app o una botella medidora. Sube tu progreso o ideas para mantenerte hidratado.",
+    "intensidad": "Baja",
+    "material": "Botella reutilizable",
+    "imagen": "/assets/ImagenMosquiPerro.jpg",
+    "video": "https://www.youtube.com/embed/tu_video_hidratacion",
+    "aportes": [
+      {
+        "usuario": "a",
+        "mensaje": "Juan, trae pan"
+      }
+    ]
+  },
+  {
+    "id": "semana-23",
+    "titulo": "Semana 23 - 3 sesiones de yoga de 30 minutos",
+    "descripcion": "¡Flexibilidad y paz! Realiza al menos 3 sesiones de yoga esta semana.",
+    "detalles": "Puedes seguir una rutina guiada en video o hacerlo por tu cuenta. Cuéntanos cómo te ha hecho sentir.",
+    "intensidad": "Media",
+    "material": "Esterilla",
+    "imagen": "/assets/ImagenMosquiPerro.jpg",
+    "video": "https://www.youtube.com/embed/tu_video_yoga",
+    "aportes": []
+  },
+  {
+    "id": "semana-24",
+    "titulo": "Semana 24 - Caminar después de comer",
+    "descripcion": "¡Activa tu digestión! Da un paseo corto (10-15 min) tras cada comida principal.",
+    "detalles": "Puedes hacerlo en casa, en el trabajo o al aire libre. Ayuda a regular la digestión y despejar la mente.",
+    "intensidad": "Baja",
+    "material": "Zapatos cómodos",
+    "imagen": "/assets/ImagenMosquiPerro.jpg",
+    "video": "https://www.youtube.com/embed/tu_video_paseo",
+    "aportes": []
+  },
+  {
+    "id": "semana-25",
+    "titulo": "Semana 25 - Desayuno saludable todos los días",
+    "descripcion": "¡Empieza bien el día! Esta semana, prepara desayunos nutritivos y equilibrados.",
+    "detalles": "Comparte tus recetas, fotos o ideas. Evita ultraprocesados y elige opciones naturales.",
+    "intensidad": "Baja",
+    "material": "Ingredientes de cocina",
+    "imagen": "/assets/ImagenMosquiPerro.jpg",
+    "video": "https://www.youtube.com/embed/tu_video_desayuno",
+    "aportes": []
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "id": 1,
+    "tipo": "material_deportivo",
+    "name": "Esterilla Antideslizante",
+    "descripción_corta": "Esterilla de 1.8 m x 0.6 m, antideslizante",
+    "descripción_larga": "Esterilla deportiva de alta densidad, resistente al sudor y fácil de limpiar. Ideal para yoga, pilates y ejercicios en el suelo.",
+    "precio": 29.99,
+    "imagenes": [
+      "/assets/EsterillaAntideslizante1.jpg",
+      "/assets/EsterillaAntideslizante2.jpg",
+      "/assets/EsterillaAntideslizante3.jpg"
+    ],
+    "comentarios": [
+      {
+        "usuario": "a",
+        "mensaje": "me duele el alma\nxd",
+        "fecha": "2025-05-10T11:09:49.385Z"
+      },
+      {
+        "usuario": "b",
+        "mensaje": "Esto va de lujo\n",
+        "fecha": "2025-05-10T11:33:55.384Z"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "tipo": "material_deportivo",
+    "name": "Juego de Mancuernas Ajustables",
+    "descripción_corta": "Par de mancuernas de 2–20 kg",
+    "descripción_larga": "Mancuernas ajustables con discos intercambiables para entrenamientos de fuerza progresiva. Mango ergonómico con recubrimiento antideslizante.",
+    "precio": 59.95,
+    "imagenes": [
+      "/assets/MancuernasAjustables1.jpg",
+      "/assets/MancuernasAjustables2.jpg",
+      "/assets/MancuernasAjustables3.jpg"
+    ],
+    "comentarios": [
+      {
+        "usuario": "a",
+        "mensaje": "fasdfas",
+        "fecha": "2025-05-10T11:07:13.596Z"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "tipo": "material_deportivo",
+    "name": "Banco Plegable para Pesas",
+    "descripción_corta": "Banco de entrenamiento ajustable",
+    "descripción_larga": "Banco plegable con respaldo reclinable en 7 posiciones y soporte para barra. Estructura de acero reforzado y tapizado acolchado.",
+    "precio": 89.5,
+    "imagenes": [
+      "/assets/Baile.png",
+      "/assets/Plancha.png",
+      "/assets/MujerComba.png",
+      "/assets/SaludoAlSol.png"
+    ],
+    "comentarios": []
+  },
+  {
+    "id": 4,
+    "tipo": "material_deportivo",
+    "name": "Banda Elástica de Resistencia",
+    "descripción_corta": "Set de 5 bandas variadas",
+    "descripción_larga": "Conjunto de bandas de resistencia (5 niveles) para entrenamiento de fuerza, rehabilitación y estiramientos. Incluye asas y anclaje para puerta.",
+    "precio": 19.99,
+    "imagenes": [
+      "/assets/bandas1.png",
+      "/assets/bandas2.png"
+    ],
+    "comentarios": []
+  },
+  {
+    "id": 5,
+    "tipo": "material_deportivo",
+    "name": "Pelota Suiza de Pilates",
+    "descripción_corta": "Pelota de 65 cm anti-reventones",
+    "descripción_larga": "Pelota de estabilidad con antifugas, ideal para ejercicios de core, pilates y estiramientos. Incluye bomba de aire y manual de ejercicios.",
+    "precio": 24.75,
+    "imagenes": [
+      "/assets/pelota1.png",
+      "/assets/pelota2.png"
+    ],
+    "comentarios": [
+      {
+        "usuario": "a",
+        "mensaje": "Esta pelota va dura de cojones",
+        "fecha": "2025-05-10T12:09:05.461Z"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "tipo": "suplementos",
+    "name": "Proteína Whey (Sabor Vainilla)",
+    "descripción_corta": "1 kg de proteína aislada",
+    "descripción_larga": "Proteína de suero de leche de rápida absorción, con 22 g de proteína por servicio. Baja en azúcares y carbohidratos.",
+    "precio": 34.99,
+    "imagenes": [
+      "/assets/whey1.png",
+      "/assets/whey2.png"
+    ],
+    "comentarios": []
+  },
+  {
+    "id": 7,
+    "tipo": "suplementos",
+    "name": "Creatina Monohidratada",
+    "descripción_corta": "300 g de creatina pura",
+    "descripción_larga": "Creatina 100% monohidratada micronizada para mejorar fuerza y rendimiento. Sin aditivos y sabor neutro.",
+    "precio": 19.99,
+    "imagenes": [
+      "/assets/creatina1.png",
+      "/assets/creatina2.png"
+    ],
+    "comentarios": []
+  },
+  {
+    "id": 8,
+    "tipo": "suplementos",
+    "name": "BCAA 2:1:1 (Sabor Frutas del Bosque)",
+    "descripción_corta": "400 g de aminoácidos ramificados",
+    "descripción_larga": "BCAA de cadena ramificada en proporción óptima para recuperación muscular, con electrolitos añadidos.",
+    "precio": 29.5,
+    "imagenes": [
+      "/assets/bcaa1.png",
+      "/assets/bcaa2.png"
+    ],
+    "comentarios": []
+  },
+  {
+    "id": 9,
+    "tipo": "suplementos",
+    "name": "Multivitamínico Diario",
+    "descripción_corta": "60 cápsulas de vitaminas y minerales",
+    "descripción_larga": "Complejo multivitamínico y multimineral para apoyar la salud y el sistema inmunitario. Formulación antioxidante.",
+    "precio": 24.99,
+    "imagenes": [
+      "/assets/multivitaminico1.png",
+      "/assets/multivitaminico2.png"
+    ],
+    "comentarios": []
+  },
+  {
+    "id": 10,
+    "tipo": "suplementos",
+    "name": "Omega-3 (Aceite de Pescado)",
+    "descripción_corta": "120 cápsulas de 1000 mg",
+    "descripción_larga": "Suplemento de ácidos grasos omega-3 para salud cardiovascular y articular. Alta concentración de EPA y DHA.",
+    "precio": 22.5,
+    "imagenes": [
+      "/assets/omega1.png",
+      "/assets/omega2.png"
+    ],
+    "comentarios": []
+  },
+  {
+    "id": 11,
+    "tipo": "ropa_deportiva",
+    "name": "Camiseta Técnica de Manga Corta",
+    "descripción_corta": "Poliéster transpirable",
+    "descripción_larga": "Camiseta ligera con tecnología de absorción de sudor, costuras planas y ajuste ergonómico para mayor libertad de movimiento.",
+    "precio": 19.99,
+    "imagenes": [
+      "/assets/camiseta1.png",
+      "/assets/camiseta2.png"
+    ],
+    "comentarios": []
+  },
+  {
+    "id": 12,
+    "tipo": "ropa_deportiva",
+    "name": "Pantalones Cortos Running",
+    "descripción_corta": "Shorts con forro interior",
+    "descripción_larga": "Pantalones cortos de secado rápido, con bolsillos laterales y cinturilla elástica ajustable. Adecuados para correr y entrenos intensos.",
+    "precio": 24.99,
+    "imagenes": [
+      "/assets/shorts1.png",
+      "/assets/shorts2.png"
+    ],
+    "comentarios": []
+  },
+  {
+    "id": 13,
+    "tipo": "ropa_deportiva",
+    "name": "Sudadera con Capucha",
+    "descripción_corta": "Algodón y poliéster",
+    "descripción_larga": "Sudadera unisex de peso medio, capucha con cordón ajustable y bolsillo canguro. Ideal para calentamiento y post-entreno.",
+    "precio": 39.99,
+    "imagenes": [
+      "/assets/sudadera1.png",
+      "/assets/sudadera2.png"
+    ],
+    "comentarios": []
+  },
+  {
+    "id": 14,
+    "tipo": "ropa_deportiva",
+    "name": "Mallas Largas de Compresión",
+    "descripción_corta": "Tejido elástico de compresión",
+    "descripción_larga": "Mallas de compresión de alto rendimiento para soporte muscular, con costuras reforzadas y paneles de ventilación.",
+    "precio": 34.5,
+    "imagenes": [
+      "/assets/mallas1.png",
+      "/assets/mallas2.png"
+    ],
+    "comentarios": []
+  },
+  {
+    "id": 15,
+    "tipo": "ropa_deportiva",
+    "name": "Calcetines Técnicos Antideslizantes",
+    "descripción_corta": "Pack de 3 pares",
+    "descripción_larga": "Calcetines con refuerzos en talón y punta, diseño antideslizante en la suela y fibra transpirable para evitar ampollas.",
+    "precio": 12.99,
+    "imagenes": [
+      "/assets/calcetines1.png",
+      "/assets/calcetines2.png"
+    ],
+    "comentarios": []
+  }
+]

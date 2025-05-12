@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "titulo": "Cardio en casa",
+    "url": "https://www.youtube.com/embed/1RFt_ugTlP0",
+    "duracion": 15,
+    "deporte": "Cardio",
+    "intensidad": "Alta",
+    "material": "Ninguno",
+    "zona": "Cuerpo completo"
+  },
+  {
+    "id": 2,
+    "titulo": "Yoga para principiantes",
+    "url": "https://www.youtube.com/embed/tu_enlace_yoga",
+    "duracion": 10,
+    "deporte": "Yoga",
+    "intensidad": "Baja",
+    "material": "Esterilla",
+    "zona": "Cuerpo completo"
+  },
+  {
+    "id": 3,
+    "titulo": "Yoga para principiantes",
+    "url": "https://www.youtube.com/embed/tu_enlace_yoga",
+    "duracion": 20,
+    "deporte": "Baile",
+    "intensidad": "Media",
+    "material": "Nada",
+    "zona": "Cuerpo completo"
+  },
+  {
+    "id": 5,
+    "titulo": "Yoga avanzado",
+    "url": "https://www.youtube.com/embed/tu_enlace_yoga",
+    "duracion": 33,
+    "deporte": "Yoga",
+    "intensidad": "Baja",
+    "material": "Esterilla",
+    "zona": "Cuerpo completo"
+  },
+  {
+    "id": 7,
+    "titulo": "Introducción a pilates",
+    "url": "https://www.youtube.com/embed/tu_enlace_yoga",
+    "duracion": 29,
+    "deporte": "Pilates",
+    "intensidad": "Media",
+    "material": "Esterilla",
+    "zona": "Cuerpo completo"
+  },
+  {
+    "id": 8,
+    "titulo": "Pilates avanzado",
+    "url": "https://www.youtube.com/embed/tu_enlace_yoga",
+    "duracion": 17,
+    "deporte": "Pilates",
+    "intensidad": "Alta",
+    "material": "Esterilla",
+    "zona": "Cuerpo completo"
+  },
+  {
+    "id": 9,
+    "titulo": "Sesión de Fuerza (Core)",
+    "url": "https://www.youtube.com/embed/tu_enlace_yoga",
+    "duracion": 46,
+    "deporte": "Fuerza",
+    "intensidad": "Alta",
+    "material": "Mancuerna",
+    "zona": "Core"
+  },
+  {
+    "id": 10,
+    "titulo": "Pilates Extreme",
+    "url": "https://www.youtube.com/embed/1RFt_ugTlP0",
+    "duracion": 33,
+    "deporte": "pilates",
+    "intensidad": "alta",
+    "material": "esterilla",
+    "zona": "total_body"
+  }
+]
