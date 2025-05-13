@@ -10,6 +10,12 @@ function HeroSection() {
       <HeroImg src={heroImage} alt="Imagen de entrenamiento deportivo" />
 
       <HeroContent>
+        <PresentationCard>
+          <h3>Bienvenido a Cuerpo y Mente</h3>
+          <h2>No va de Cuerpo sino de Actitud</h2>
+          <p>Descubre planes de entrenamiento, productos y consejos para llevar una vida más saludable. Todo en un solo lugar.</p>
+        </PresentationCard>
+
         <HeroMessage>
           <HeroTitle>¡Empieza a disfrutar del deporte ahora mismo!</HeroTitle>
           <HeroLink as={Link} to="/planes">
@@ -19,11 +25,12 @@ function HeroSection() {
         </HeroMessage>
       </HeroContent>
     </HeroContainer>
+
   )
 }
 
 const HeroContainer = styled.section`
-  position: absolute;
+  position: relative;
   width: 100%;
   height: calc(100vh - 70px); /* Ajustado para el header fijo */
   overflow: hidden;
@@ -44,10 +51,13 @@ const HeroContent = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 0 5%;
+  flex-wrap: wrap; /* Para que sea responsive */
+  gap: 2rem;
 `
+
 
 const HeroMessage = styled.div`
   max-width: 500px;
@@ -101,5 +111,35 @@ const HeroLink = styled.a`
     transform: translateY(-1px);
   }
 `
+
+const PresentationCard = styled.div`
+  flex: 1;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 8px;
+  margin-right: 2rem;
+  color: ${colors.white};
+
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: ${colors.white};
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: ${colors.white};
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: ${colors.white};
+  }
+`
+
 
 export default HeroSection

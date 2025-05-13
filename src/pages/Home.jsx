@@ -1,6 +1,5 @@
 import Header from "../components/Header"
 import HeroSection from "../components/HeroSection"
-import FeaturedVideos from "../components/FeaturedVideos"
 import Footer from "../components/Footer"
 import styled from "styled-components"
 import colors from "../theme/colors"
@@ -10,7 +9,6 @@ const Home = () => (
     <Header />
     <MainContent>
       <HeroSection />
-      <FeaturedVideos />
     </MainContent>
     <Footer />
   </Container>
